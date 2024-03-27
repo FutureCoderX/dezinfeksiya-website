@@ -1,0 +1,70 @@
+.proof{
+    padding: 110px 0;
+
+    @include media(768){
+        padding: 80px 0;
+    }
+
+    &__wrap{
+        background: radial-gradient(95.44% 490.36% at 92.87% 11.25%, #33A9FF 0%, #33FFF3 100%);
+        padding: 32px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        gap: 120px;
+
+        &-img{
+
+            @include media(425){
+                height: 0;
+                width: 0;
+            }
+
+        }
+
+        @include media(1100){
+            gap: 50px;
+        }
+
+        @include media(768){
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &-dev{
+
+            &-text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+
+                &-text img{
+                    width: 518px;
+                    height: 500px;
+
+                    @include media(911){
+                        width: 498px;
+                        height: 480px;
+                    }
+                }
+
+                &-desc{
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 35px;
+                    color: white;
+                    margin-bottom: 130px;
+
+                    @include media(911){
+                        font-size: 25px;
+                        margin-bottom: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+}

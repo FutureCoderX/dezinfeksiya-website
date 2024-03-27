@@ -1,0 +1,92 @@
+.service{
+    padding: 30px 0;
+
+    &__wrap{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        &-title{
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 64px;
+            width: 100%;
+            color: #020C31;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include media(1130){
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+            }
+
+        }
+
+        &-desc{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            max-width: 335px;
+            color: #666666;
+            margin-bottom: 20px;
+            
+            @include media(1130){
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &-serveses{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @include media(1130){
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            &-block{
+                width: 350px;
+                height: 500px;
+                padding: 25px;
+                background: #F3F6F6;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                &-desc{
+
+                    &-h2{
+                        color: #020c31;
+                        font-size: 23px;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+
+                    &-p{
+                        color: #495157;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.serveses__img{
+    @include media(425){
+        height: 60px;
+        width: 60px;
+    }
+}

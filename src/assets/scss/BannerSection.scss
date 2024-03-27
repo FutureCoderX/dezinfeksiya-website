@@ -1,0 +1,91 @@
+.banner{
+    padding: 120px 0 50px 0;
+
+    @include media(425){
+        background: url(../images/banner.png) no-repeat;
+    }
+
+    &__wrap{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        @include media(425){
+            flex-direction: column;
+        }
+
+        &-desc{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+
+            &-h1{
+                font-size: 54px;
+                font-weight: 500;
+                line-height: 62px;
+                width: 100px;
+                color: #3375FF;
+                margin-bottom: 32px;
+
+                @include media(1070){
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                }
+
+                @include media(425){
+                    color: black;
+                    line-height: 35px;
+                }
+
+
+            }
+
+            &-text{
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                width: 301px;
+                color: #676D83;
+                margin-bottom: 169px;
+
+                @include media(1070){
+                    font-size: 15px;
+                    margin-bottom: 140px;
+                }
+
+                @include media(768){
+                    margin-bottom: 100px;
+                }
+
+                @include media(425){
+                    color: yellow;
+                    margin-bottom: 60px;
+                }
+
+            }
+        }
+
+        &-img{
+            height: 530px;
+            max-width: 664px;
+
+            @include media(1070){
+                height: 500px;
+                width: 634px;
+                width: 90%;
+            }
+
+            @include media(768){
+                width: 400px;
+                height: 400px;
+            }
+
+            @include media(425){
+                width: 0;
+                height: 0;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.modal{
+    background: rgb(0, 0, 0, 0.35);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+
+    &__block{
+        background: linear-gradient(0deg, rgba(103, 80, 164, 0.11), rgba(103, 80, 164, 0.11)), #fffbfe;
+        border-radius: 28px;
+        max-width: 500px;
+        height: 280px;
+        width: 100%;
+        padding: 30px;
+        position: relative;
+
+        &-btn{
+            position: absolute;
+            border: none;
+            right: 0;
+            top: 0;
+        }
+
+        &-p{
+            font-size: 28px;
+            color: blue;
+            text-align: center;
+        }
+
+        &-p2{
+            font-size: 60px;
+            text-align: center;
+
+        }
+    }
+    
+}

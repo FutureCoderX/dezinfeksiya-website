@@ -1,0 +1,55 @@
+.faq{
+    padding: 15px 0;
+
+    &__wrap{
+        display: flex;
+        align-items: start;
+        gap: 100px;
+
+        @include media(425){
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &-title{
+            font-size: 48px;
+            font-weight: 700;
+            color: #020C31;
+            margin-top: 30px;
+
+            @include media(425){
+                font-size: 35px;
+            }
+
+        }
+
+        &-blocks{
+            padding: 30px;
+            width: 100%;
+
+            @include media(425){
+                padding: 15px;
+            }
+            
+        }
+    }
+}
+
+.line{
+    border-top: 2px solid #CCCCCC;
+}
+
+.accordion{
+
+    &-item{
+        border: none;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    &-item:hover{
+        background: white;
+    }
+}
